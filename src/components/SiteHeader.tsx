@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/hooks/use-theme";
 import { Moon, Sun } from "lucide-react";
+import { Link } from "react-router";
 
 /**
  * En-tête minimaliste partagé par toutes les pages.
@@ -12,12 +13,12 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-20 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-6">
-        <a href="/" className="flex items-center gap-2.5">
+        <Link to="/" className="flex items-center gap-2.5">
           <DialMark />
           <span className="text-sm font-semibold tracking-tight">
             Comparateur · Exerciceur
           </span>
-        </a>
+        </Link>
         <Button
           variant="ghost"
           size="icon"
