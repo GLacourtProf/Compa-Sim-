@@ -2,6 +2,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
 import { Dial } from "@/components/Dial";
 import { ArrowRight, FileText, Ruler, Users } from "lucide-react";
+import { Link } from "react-router";
 
 const DEMO = { revolutions: 12, fraction: 0.48 };
 
@@ -29,10 +30,10 @@ export default function Landing() {
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <Button size="lg" asChild>
-                  <a href="/exercice">
+                  <Link to="/exercice">
                     Commencer l&apos;exercice
                     <ArrowRight className="ml-2 size-4" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
               <p className="mt-4 text-xs text-muted-foreground">
@@ -108,10 +109,10 @@ export default function Landing() {
               </p>
             </div>
             <Button asChild>
-              <a href="/exercice">
+              <Link to="/exercice">
                 Ouvrir l&apos;exerciceur
                 <ArrowRight className="ml-2 size-4" />
-              </a>
+              </Link>
             </Button>
           </div>
         </section>
